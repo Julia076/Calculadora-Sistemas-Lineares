@@ -1,0 +1,79 @@
+/* Container principal que envolve toda a estrutura da matriz */
+.matrix-container {
+    margin: 20px 0;  /* Espaçamento de 20px acima e abaixo do container */
+}
+
+/* Controles da matriz (inputs de dimensão) */
+.matrix-controls {
+    margin-bottom: 20px;  /* Espaçamento abaixo dos controles */
+}
+
+/* Grade da matriz - estrutura principal */
+.matrix-grid {
+    display: inline-flex;      /* Permite que a matriz fique em linha */
+    flex-direction: column;    /* Organiza as linhas verticalmente */
+    gap: 10px;                /* Espaçamento entre as linhas da matriz */
+    padding: 20px;            /* Espaçamento interno */
+    border: 2px solid #3b5e44; /* Borda verde escura */
+    border-radius: 5px;        /* Cantos arredondados */
+    background: #fff;          /* Fundo branco */
+}
+
+/* Linha individual da matriz */
+.matrix-row {
+    display: flex;    /* Organiza as células horizontalmente */
+    gap: 10px;        /* Espaçamento entre células */
+}
+
+/* Célula individual da matriz */
+.matrix-cell {
+    width: 60px;              /* Largura fixa para cada célula */
+    height: 40px;             /* Altura fixa para cada célula */
+    text-align: center;       /* Centraliza o texto */
+    border: 1px solid #ccc;   /* Borda cinza clara */
+    border-radius: 4px;       /* Cantos levemente arredondados */
+    font-size: 16px;          /* Tamanho da fonte */
+}
+
+/* Estado de foco da célula */
+.matrix-cell:focus {
+    border-color: #4c7256;    /* Borda verde escura quando selecionada */
+    outline: none;            /* Remove outline padrão */
+    box-shadow: 0 0 5px rgba(208, 255, 220, 0.3); /* Sombra suave */
+}
+
+/* Estilo do vetor b */
+.vector-b {
+    display: inline-flex;      /* Permite que fique em linha com a matriz */
+    flex-direction: column;    /* Organiza células verticalmente */
+    gap: 10px;                /* Espaçamento entre células */
+    margin-left: 20px;        /* Espaçamento à esquerda (separa da matriz A) */
+    padding: 20px;            /* Espaçamento interno */
+    border: 2px solid #3b5e44; /* Borda verde escura */
+    border-radius: 5px;        /* Cantos arredondados */
+    background: #fff;          /* Fundo branco */
+}
+
+/* Wrapper que mantém matriz A e vetor b alinhados */
+.matrix-wrapper {
+    display: flex;             /* Layout flexível */
+    align-items: center;       /* Alinha itens verticalmente */
+    justify-content: center;   /* Centraliza horizontalmente */
+}
+
+/* Controles de dimensão da matriz */
+.dimension-control {
+    display: flex;            /* Layout flexível */
+    gap: 20px;               /* Espaçamento entre controles */
+    margin-bottom: 20px;     /* Espaçamento inferior */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Input para controle de dimensões */
+.dimension-input {
+    width: 60px;             /* Largura fixa */
+    text-align: center;      /* Centraliza texto */
+    padding: 5px;            /* Espaçamento interno */
+    border: 1px solid #3b4836;  /* Borda cinza clara */
+    border-radius: 4px;      /* Cantos arredondados */
+}
